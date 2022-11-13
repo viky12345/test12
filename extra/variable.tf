@@ -10,16 +10,6 @@ variable "instance_type" {
   default = "t2.micro"
 }
 
-variable "sg_ingress_rules" {
-  description = "Ingress security group rules"
-  type        = map
-}
-
-variable "aws_security_group" {
-  description = "aws_security_group name"
-  type        = string
-  default = "security"
-}
 
 variable "aws_instance_name" {
   description = "aws_instance_name "
