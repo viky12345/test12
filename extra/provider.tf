@@ -1,7 +1,4 @@
 provider "aws" {
-  region  = var.AWS_REGION
+  region  = "us-east-2"
   # version = ">= 3.0"
-}
-terraform {
-  required_version = ">= 0.12.24"
 }

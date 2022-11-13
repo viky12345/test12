@@ -1,6 +1,6 @@
 resource "aws_security_group" "das_security" {
   name = var.aws_security_group
-  vpc_id  = data.aws_vpc.cluster_vpc.id
+  vpc_id  = "vpc-1348ca78"
   dynamic "ingress" {
     for_each = var.sg_ingress_rules
     content {
@@ -20,6 +20,6 @@ resource "aws_security_group" "das_security" {
   }
 
   tags = {
-    Name = "das-security"
+    Name = "security"
   }
 }
